@@ -1,0 +1,47 @@
+<!--VIDEO COM THUMBNAIL, FOTO FLEXÍVEL E ÁUDIO-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos, áuidios e imagens em HTML5 </title>
+</head>
+<body>
+  <h1>Inserindo vídeos hospedado localmente</h1>  
+  <p>Este vídeo está hospedado no meu própio servidor</p>
+         <video poster="thumbnail/maxresdefault.jpg" src="midia/Meu-Video.Mp4.mp4" width="500" controls></video> 
+  <br>
+  <!--IDEAL COLOCAR TODOS OS TIPOS DE VIDEO. MP4,M4V,OGV,WEBM, POIS TEM NAVEGADORES QUE NÃO IDENTIFICA ALGUNS FORAMATO DE VÍDEO-->
+<video poster="thumbnail/maxresdefault.jpg" width="500" controls loop>
+        <source src="midia/meu-video.og.mp4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm">
+        <source src="midia/Meu-Video.m4v.m4v" type="video/mp4">
+        <p>Seu navegador não tem compatibiliade com reprodução de videos</p>
+</video>
+        <br>
+<h1>Inserindo imagens</h1>
+<h4>*TESTE*</h4>
+<picture>
+      <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+<audio preload="metadata" controls autoplay loop>
+      <source src="áudios/rhuan1.mo.mp3" type="audio/mpeg">
+      <source src="áudios/rhuan1.mo.ogg" type="audio/ogg">
+      <source src="áudios/rhuan1.mo.wav" type="audio/wav">
+      <p>Infelizmente seu navegador não consegue reproduzir esse áudio.<a href="áudios/rhuan1.mo.mp3" download="áudio/rhuan1.mo.mp3" type="audio/mpeg">Clique aqui para fazer o download do arquivo MP3.</a></p>
+      </audio>
+      <br>
+      <h1>Inserindo vídeos do YouTube</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MRIZSoE40R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      <br>
+      <!--É BOM CRIAR UM CANAL NO YOUTUBE, UPAR E COLOCAR NO SITE, ATRAVES DO (INCORPORAR)-->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jQyBag2WJyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+      <!--<iframe> para vídeos de sites externos
+      <Video> hospedar o vídeo no seu site-->
+      <h1>Inserindo vídeos do Vimeo</h1>
+      <iframe src="https://player.vimeo.com/video/485545155?h=b61816ff9a&color=ffffff&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>   <!--O VIMEO É BOM POIS A QUALIDADE É MELHOR E NÃO APARECE OUTROS VÍDEOS RECOMENDADO, O PROBLEMA É O VALOR MENSAL-->  
+</body>
+</html>

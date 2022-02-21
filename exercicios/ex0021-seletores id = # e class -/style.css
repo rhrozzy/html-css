@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* em HTML é id    =    em CSS é # (só pode um elemento "POR PÁGINA")
+   em HTML é class =    em CSS é . (pode vários elementos)
+*/
+   
+/*                   # #  DICA  # #
+consigo colocar mais de uma class dentro de uma. EX: <h1 class="avancado destaque", para isso é só colocar um espaço separando, não precisa colocar vírgula 
+*/
+
+/* 
+O ID é único por tag, já o CLASS é usado para repetir padrões em vários outros elementos.
+ */
+
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif
+}
+h1#principal { background-color:#6fb48f;
+  color:#d6fde9;
+  text-align: center;
+}
+h1 {
+    color:
+    #487553;
+}
+
+.basico { 
+    color: #6EB580; 
+}
+
+.intermediario {
+   color: #b4b56e ;
+}
+
+
+.avancado {
+   color: #b56e6e ;
+}
+
+
+.destaque {
+    color: rgb(192, 192, 102);
+}
+

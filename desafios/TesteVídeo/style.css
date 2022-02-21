@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'fonte';
+    src: url(fonte/Headlines-BoldItalic.otf) format('opentype');
+}
+body {
+     background-image: linear-gradient(to right, #B3E0F2, #26528C);
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+.carro {
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Fonte',Arial, Helvetica, sans-serif;
+    color:#0b2d58;
+    text-align: center;
+    text-shadow: 1px 1px 1px #1a4c8d;
+    
+}
+h3 {
+    color:#1a4c8d;
+}

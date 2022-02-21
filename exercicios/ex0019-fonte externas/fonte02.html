@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externas</title>
+</head>
+<style>
+/*              ## TIPOS DE FORMAT() ##
+           - OPENTYPE (OTF)
+           - TRUETYPE (TTF)
+           - EMBADDED-OPENTYPE
+           - TRUETYPE-ATT (APPLE ADVANCED TYPOGRAPHY)
+           - SVG
+*/
+    @font-face {
+        font-family: Love;
+        src: url('Fontes/love\ larry.ttf') format('opentype');
+        font-weight: normal;
+        font-style: normal;  
+        }
+        
+    body {
+        font-family: 'Love' Arial, Helvetica, sans-serif;
+        font-size: 16px;
+            }
+
+    h1{
+        font-family: 'Love', Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+    }
+</style>
+<body>
+    <h1>Salve salve familía</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, odio. Vero hic, magni qui esse eligendi numquam alias, in dolor vitae et suscipit eaque ullam natus possimus explicabo? Nobis, nisi.
+    </p>
+</body>
+</html>

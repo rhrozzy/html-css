@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+    background-color: rgba(64, 61, 67, 0.131);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link { 
+    color: rgb(85, 0, 255);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255, 0, 0);
+}
+a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 0, 140, 0.097);
+}
+a:active{
+    color: rgba(255, 0, 0, 0.535);
+}
+p{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+code {
+    text-align: center;
+}
+li {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+div { text-align: center;
+}
+ul {
+    list-style: none;
+}
+button {
+    background-color: lightcoral;
+}

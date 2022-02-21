@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Refazendo</title>
+    <link rel="shortcut icon" href="favicon/leitura.png" type="image/x-icon">
+    <link rel="stylesheet" href="tipo.css">
+</head>
+
+<!-- UNDERLINE -- Quando passa o mouse me cima aparece um sublinhado-->
+<body>
+ <h1>Refazendo o que eu lembro.</h1>   
+ <p>Para quebrar um texto devo usar a tag &lt;br&gt;</p>
+ <p>Vamos adicionar alguns símblos especiais:
+    &reg;
+    &copy;
+    &trade;
+    &euro;
+    &pound;
+    &yen;
+    &cent;
+    &delta;
+    &Delta;
+    &uarr;
+    &darr;
+    &larr;
+    &rarr;
+</p>
+<h3>Hierarquia de Títulos</h3>
+<p>O título vai do &lt;h1&gt; até o &lt;h6&gt; </p>
+<h3>Endereço</h3>
+<p>Eu moro na rua<address>Rua:Mozair da Silva Barcelos n°1702, Bairro: Aeroporto 3</address></p>
+<h3>Ítalico</h3>
+<p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica) </p>
+<h3>Texto desatcado</h3>
+<P>Nesta frase, temos um <strong>termo em destque</strong> usando a tag STRONG (semântica)</P>
+<h3>Texto Marcado</h3>
+<p>Podemos criar também <mark> texto marcado</mark> usando a tag MARK</p>
+<h3>Texto Sublinhado</h3>
+<p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Usar a TAG &lt;ins&gt; e não &lt;u&gt;, pois, essa tag não é semântica, ou seja, não tem sentido.</p>
+<h3>Texto sobrescrito</h3>
+<p>Usar a tag &lt;sup&gt; para inserir coisas do tipo x<sup>20</sup>+3</p>
+<h3>Texto subscrito</h3>
+<p>Usar a tag &lt;sub&gt; para inserir coisas do tipo H<sub>2</sub>O</p>
+<h3>Citações</h3>
+<p>Usar a tag &lt;q&gt; para inserir (<q>A</q>). Exemplo:<q> o computador é um burro muito rápido.</q></p>
+<h1>Trabalhando com listas</h1>
+<h2>Lista ordenada</h2>
+<ol type="1"><!--OL= Lista Ordenada -->
+    <li>Alface</li>
+    <li>Tomate</li>
+    <li>Arroz</li>
+    <li>Feijão</li>
+    <li>Suco de laranja</li>
+    <li>Carnde de Porco</li>
+</ol>
+<h2>Lista não Ordenada</h2>
+<ul type=square>
+    <li>Alface</li>
+    <li>Tomate</li>
+    <li>Arroz</li>
+    <li>Feijão</li>
+    <li>Suco de laranja</li>
+    <li>Carne de Porco</li>
+</ul>
+<h2>Minhas linguagens favoritas</h2>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <Li>Clipper</Li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="5">
+        <li>PHP</li>
+        <li>Phyton</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+    </ol>
+</ol>
+<h2>Meus jogos favoritos</h2>
+<ol>
+    <li>NES</li>
+    <ul>
+        <li>Mario Bros</li>
+        <ul type=square> 
+            <li>Mario Bros 1</li>
+            <li>Mario= Lost levels</li>
+        </ul>
+    </ul>
+</ol>
+<ol>
+    <li>Console</li>
+    <ul>
+        <li>Call of Duty</li>
+        <ul type="square">
+            <li>Carro</li>
+            <li>Moto</li>
+            <li>Casa</li>
+        </ul>
+    </ul>
+</ol>
+<ol>
+    <li>Super Nintendo</li>
+    <ul type="square">
+        <li>Mario</li>
+        <li>Donkey Kong</li>
+    </ul>
+</ol>
+<ol>
+    <li>PlayStation</li>
+    <ul type="square">
+        <li>MotoGP</li>
+        <li>Final Fantasy</li>
+        <li>Castkevania</li>
+        <li>GTA San Andreas</li>
+    </ul>
+</ol>
+<h2>Lista de definições</h2>
+<p>A lista de definições vem da tag &lt;dl&gt;, que significa Definition List {lista de definição}.</p>
+<p>A tag &lt;dt&gt;,significa "Termo", ela fica um pouco mais na esquerda, já a TAG &lt;dd&gt;, fica um pouco mais para a direita.</p>
+<p>A vantagem dessa Tag é que ela ajuda nos mecanismo de busca do Google, e ele dá valor para sites que usa Lista de definições. Como por exemplo quando alguém pesquisa "Qual a definição de HTML?", o Google vai buscar site que tem Lista de Definições.
+</p>
+<strong>Exemplos:</strong>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criação de site do conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do desing de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+</dl>
+</p>
+    <h2>Código-fonte</h2>
+    <p><code>O comando document.getElementsById('teste') é escrito em línguagem JavaScript</code></p>
+<h2>Citação</h2>
+     <blockquote>
+        <p>Beware of bugs in the above code; I have only proved it correct, not tried it.” </p>
+        <cite><a href="http://www-cs-faculty.stanford.edu/~uno/faq.html"target="blank" rel="external">Donald Knuth: Notes on the van Emde Boas construction of priority deques: An instructive use of recursion, March 29th, 1977</a>
+      </blockquote> <!--- COM LINK-->
+    <hr>
+<figure>
+        <blockquote>
+             <p>Quando acordei hoje de manhã, eu sabia quem eu era, mas acho que já mudei muitas vezes desde então. A única forma de chegar ao impossível e acreditar que é possível.</p>
+        </blockquote>
+    <figcaption>
+        Lewis Carroll, in "<cite>Alice no País das maravilhas</cite>", from
+        the <cite>Alice no País das maravilhas</cite> Filme 1°(Sundey-November
+        1885
+    </figcaption>
+</figure>
+<hr>
+<figure>
+    <q>
+        <p>The truth may be puzzling. It may take some work to grapple with.
+        It may be counterintuitive. It may contradict deeply held
+        prejudices. It may not be consonant with what we desperately want to
+        be true. But our preferences do not determine what's true.</p>
+    </q>
+<hr>
+        <figcaption>Carl Sagan, in "<cite>Wonder and Skepticism</cite>", from
+        the <cite>Skeptical Inquirer</cite> Volume 19, Issue 1 (January-February
+        1995)
+    </figcaption>
+</figure>
+<hr>
+<blockquote cite="https://www.instagram.com/rh_rozzy"> Meu Instagram. Blockquote com cite.</blockquote>
+<h1>Usando links externos</h1>
+<p>Você pode acessar meu Instagram <a href="https://www.instagram.com/rh_rozzy" target="_blank" rel="external"> >Clicando aqui<
+    </a>
+</p>
+<p>Você pode acessa meu Twitter <a href="https://twitter.com/rh_rozzy" >>Clicando aqui<
+</a>
+</p>
+<p>Vá para a segunda página <a href="página02.html" rel="next">>Clicando aqui<</a></p>
+<h1>Áudio</h1>
+<audio src="áudio/mandelão.p.mp3" controls loop></audio>
+<br>
+<audio preload="metadata" controls >
+<source src="áudio/mandelão.p.mp3" type="audio/mpeg">    
+<source src="áudio/mandelão.p.ogg" type="audio/ogg">
+<source src="áudio/mandelão.p.wav" type="audio/wav"> <!--RECOMENDADO NAO USAR POIS É MUITO PERSADO-->
+<P>Infelizmente seu navegador não consegue reproduzir esse áudio. <a href="áudio/mandelão.p.mp3" download="áudio/mandelão.p.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3. </a>
+</P>
+</audio>
+<br><br>
+<h1>Vídeo hospedado no própio servidor/pc</h1>
+<video poster="thumbnail/maxresdefault.jpg" width="560" controls >
+<source src="vídeo/Meu-Video.Mp4.mp4" type="video/mp4">
+<source src="vídeo/Meu-Video.webm.webm" type="video/webm">
+<source src="vídeo/Meu-Video.m4v.m4v" type="video/m4v">
+<p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+</video>
+<h1>Vídeos hospedado no YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/se8GuSPg5wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+<h1>Vídeos hospedado pelo Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/186240055?h=a4311e786d&loop=1&color=ff9933&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<br>
+<a 
+    href="página02.html"rel="next">
+    <input type="button" value="Clique aqui">
+</a>
+
+<form action="página02.html"><button type="submit">Clique aqui</button></form>
+<a href="página02.html"><button>Clique aqui</button></a>
+</body>
+</body>
+</html>

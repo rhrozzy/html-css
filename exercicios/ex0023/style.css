@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Kaushan+Script & display=swap');
+
+* {
+    font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to right, #F2D3B6,#978372 );
+}
+
+header {
+    background-color: #97837285;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;   
+}
+
+header > h1 img {
+    width: 100px;
+    text-align: left;
+    margin: 0;  
+}
+
+.h1rhuan { 
+    transition: 0.5s ease;
+    display:inline-block; 
+} 
+
+h1:hover  { 
+    transform: rotateZ(720deg);
+}
+
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    background-color:rgb(37, 34, 25) ;
+}
+
+#menu-h ul li {
+    display: inline;
+    background-color: rgb(37, 34, 25);
+}
+
+#menu-h ul li a{
+ text-decoration: none;
+ color: #fff;
+ padding: 20px;
+ display: inline-block;
+ transition: background .4s;
+
+}
+#menu-h ul li a:hover{
+    background-color:rgb(104, 85, 63)
+   }
+
+#menu-h li:last-child a {
+    float: right;
+    background-color: rgb(104, 85, 63);
+}
+
+main { 
+    background-color: #ceb8a33d;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #9987789a;
+}
+
+#assuntos{
+color: rgb(85, 85, 85);
+}
+
+article{
+    background-color: 5%,#9783722c;
+    padding-left: 9px;
+    border-radius: 5px;
+    margin: 9px;
+}
+
+aside {
+ background-color: #97837241;
+ margin: 9px;
+ padding-left: 9px;
+}
+
+#desenvolvidopor {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0px;
+    padding: 10px;  
+}
+li img {
+    display: inline;
+    margin: 0px;
+    }
+
+li:hover .rhuan {
+    transform:rotateX(360deg);
+}
+
+.rhuan { 
+    transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: all 0.5s ease; 
+} 
+
+a:hover .rhuan1 { 
+    transform: scale(1.2); 
+}
+
+
+footer {
+    background-color: rgb(80, 73, 54);
+    color:white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+
+ 
+

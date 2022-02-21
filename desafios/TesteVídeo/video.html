@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <h1>Videos hospedado em outros servidores</h1>
+<h3>Video hospedado no YouTube</h3>
+    <iframe width="360" height="275" src="https://www.youtube.com/embed/2uMzJsM1oKU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<h3>Video hospedado no Vimeo</h3>
+     <iframe src="https://player.vimeo.com/video/16977998?h=b8b8182cd8&title=0&portrait=0" width="360" height="275" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <h3>Video hospedado no meu servidor</h3> 
+    <p>Esse vídeo está hospedado no meu computador</p>
+<video poster="thumbnail/maxresdefault.jpg" width="360" controls> 
+        <source src="midia/Meu-Video.m4v.m4v" type="video/mp4">
+        <souce src="midia/Meu-Video.webm.webm" type="video/webm">
+        <source src="midia/Meu-Video.Mp4.mp4" type="video/mp4">
+        <p>Infelizmente seu navegador não é compatível com o video</p>
+</video>
+<br>
+<h1>Inserindo imagens flexivel</h1>
+<h3>## TESTE ##</h3>
+<div><picture>
+    <source media="(max-width: 750px)" 
+    srcset="imgTeste/teste300.jpg" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imgTeste/teste750.jpg" type="image/png">
+    <img src="imgTeste/teste1500.jpg"
+    alt="Imagem flexível">
+    </picture></div>
+    
+
+<h1>Inserindo audio</h1>
+<audio preload="metadata" controls loop>
+    <source src="áudios/rhuan1.mo.mp3" type="audio/mp3">
+    <source src="áudios/rhuan1.mo.ogg" type="audio/ogg">
+    <source src="áudio/wav">
+</audio>
+<br>
+<img class="carro" src="imagens/foto-p.png" >
+    
+</body>
+</html>

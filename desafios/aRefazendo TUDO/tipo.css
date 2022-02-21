@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(213, 200, 185);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+        
+a:link {
+    color: black;
+        text-decoration: none;
+        }
+a:visited {
+        color: rgb(98, 104, 138);
+        }
+a:hover {
+    text-decoration:  underline; 
+    background-color: rgb(211, 196, 196);
+          }
+a:active {
+    color: rgb(0, 255, 115);
+        }
+h1 {
+color: black;
+    }
+h2 {
+color: rgb(65, 65, 65);
+    }
+h3 {
+color: gray;
+    }                   

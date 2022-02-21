@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferente ou simplesmente aumente e diminua o tamanho do seu navergador</p>
+    <!--IMAGENS FLEXÍVEIS-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h2>TESTE*</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgTeste/teste300.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgTeste/teste750.jpg" type="image/png">
+        <img src="imgTeste/teste1500.jpg" alt="Imagem flexível">
+    </picture>
+    <br>
+    <!--DICAS ABAIXO-->
+    <img 
+    style="width: 200px; height: 150px;" 
+    src="imagens/foto-g.png">
+    <div 
+    style="background-image:
+        url('https://i.stack.imgur.com/wPh0S.jpg'); 
+            width:200px; 
+            height:100px; 
+        background-position:center;">&nbsp;</div><!--NO POSITION, DA PRA MUDAR EX: LEFT, RIGHT E CENTER-->`
+<br>
+          <h1>Reproduzindo Áudio</h1>
+          <p>Vamos aprender a reproduzir áudios em HTML5</p>
+          <audio src="áudios/rhuan1.mo.mp3" controls autoplay loop></audio>
+          <!--TEM MUITOS NAVEGADOR QUE NAO TEM TOTAL COMPATIBILIDADE, INCLUSIVE MP3-->
+          <!--MP3  WAV  OGG-->
+          <br>
+        <audio preload="metadata" controls autoplay loop> 
+            <source src="áudios/rhuan1.mo.mp3" type="audio/mpeg">
+            <source src="áudios/rhuan1.mo.ogg" type="audio/ogg">
+            <source src="áudios/rhuan1.mo.wav" type="audio/wav"><!--RECOMENDADO NÃO USAR O WAV PQ O ARQUIVO É MUITO PESADO PARA UM SITE--> 
+            <p>Infelizmente seu navergador não consegue reproduzir esse áudio. <a href="áudios/rhuan1.mo.mp3" download="áudios/rhuan1.mo.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3.</a></p>
+        </audio>
+        <br>
+        <h1>Inserindo vídeos hospedado localmente</H1>  
+        <p>Este vídeo está hospedado no meu própio servidor</p>
+        <video poster="imagens/foto-m.png" width="500" controls>
+    <source src="midia/meu-video.og.mp4.mp4" type="video/mp4">
+    <source src="midia/Meu-Video.webm.webm" type="video/webm">
+    <source src="midia/Meu-Video.m4v.m4v" type="video/mp4"></video>
+    <p>Seu navegador não tem compatibiliade com reprodução de videos</p> 
+    <h1>Vídeos hospedado no YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--<iframe> para vídeos de sites externos
+        <Video> hospedar o vídeo no seu site-->
+    <iframe src="https://player.vimeo.com/video/485545155?h=b61816ff9a&color=ffffff&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+
+</body> 
+</html>

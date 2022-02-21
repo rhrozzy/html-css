@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <hr>
+<h1>Trabalhando com listas</h1>
+<h2>Listas Ordenadas</h2>
+   <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    
+<!--A tag <ol> significa Lista Ordenada-->
+
+<!--A Tag <li>, ela lista de forma automática. Porém ele tem uma curiosidade, ele não precisa de "Fechar a tag {</li>" OBS: ESSA TAG VAI DENTRO DA <OL>-->
+    
+    <h2>Listas não ordenada</h2>
+    <ul type="square"> <!--Disc, circle e square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Arroz</li>
+        <li>Manteiga</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minha linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <Li>PHP</Li>
+            <li>Phyton</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <!--O start é um parâmetro númerico, ou seja, deve colocar um número para representar. EX: quero que começe da letra E, deste modo devo colocar o número 5, pois, do A até E tem cinco letras. -->
+        </ol>
+           
+        <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <ul type="square">
+                    <li>Mario Bros 1</li>
+                    <li>Mario= Lost Levels</li>
+                </ul>
+                <li>Rhuan Pablo</li>
+            <ul type="square"> 
+                <li>carro</li>
+                <li>Moto</li>
+                <li>casa</li>
+            </ul>
+            </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donekey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>MotoGP</li>
+                <li>Final Fantasy</li>
+                <li>Castkevania</li>
+                <!--Quando eu quero selecionar várias coisas devo usar o ALT-->
+            </ul>
+        </ol>
+  </ol>
+                 <ol>
+                      <li>Voar</li>
+                    <ul type="square">
+                        <li>Avião</li>
+                        <li>Jato</li>
+                        <li>Helicóptero</li>
+                        <li>Drone</li>
+                        <li>Ovni</li>
+                    </ul>
+                </ol>
+                    
+  <h2>Lista de definições</h2>
+  <dl> <!--DL= definition list {Lista de definição}-->
+<dt>Termo</dt> <!--Os termos fica a esquerda, e os DD= Descrição fica um pouco mais para a direita-->
+      <dt>HMTL</dt>
+      <dd>Linguagem de marcação para criação de conteúdo de um site.</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de maracação para criação do desing de um site.</dd>
+      <dt>JavaScript</dt>
+      <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+  </dl>
+  <!-- Essa TAG ajuda nos mecanismo de busca, quando alguém pesqisa "Qual a definição de HTML", o google da valor para sites que tem Lista de definições no seu navegador. -->
+<hr>   
+</body>
+</html>
