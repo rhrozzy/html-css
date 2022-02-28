@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-size: 100% 100%;
+            background-image: url('imagens/target001.png');
+           
+            position: relative; 
+            height: 96vh;
+            padding: 10px;
+            background-color: yellow;
+        }
+        /*O CONTAINER, TEM POSIÇÃO RELATIVA, JÁ O CONTEUDO TEM POSIÇÃO ABSOLUTA */ 
+
+        /* Quando colocamos 'position: absolute' em um elemento, ele nos permite configurar outras duas propiedades que são elas: left e top */
+
+        #conteudo { 
+            background-size: 100% 100%;
+            background-image: url('imagens/target001.png'); 
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: blue;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); 
+/*                  
+ Quando coloca o valor negativo ele se move para esquerda e para cima, já quando coloca o valor positivo ele se mova para direita e para baixo. 
+ 
+EX: transform: translate(-20px, -20px); <-- NESTE CASO ELE IRA SE MOVER 20px PARA ESQUERDA E 20px PARA CIMA
+
+EX: transform translate(20px, 20px) <-- NESTE CASO ELE IRA SE MOVER 20px PARA A DIREITA E 20px PARA BAIXO
+*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+</body>
+</html>
