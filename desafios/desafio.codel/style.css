@@ -30,7 +30,7 @@ html, body {
 
 header {
     font-family: var(--fonte2);
-    background-image: linear-gradient(to bottom, #D9C6BA, #BFA68F ) ;
+    background-image: linear-gradient(to right, #BFA68F,#D9C6BA, #BFA68F ) ;
     color: rgba(255, 255, 255, 0.637);
     text-align: center;
     
